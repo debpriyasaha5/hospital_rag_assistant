@@ -1,0 +1,31 @@
+test_name,Category,Price (INR),sample_type,Fasting Required,Report Turnaround Time,Home Collection
+Complete Blood Count (CBC),Hematology,400,Blood,No,Same day (4-6 hrs),Yes
+Erythrocyte Sedimentation Rate (ESR),Hematology,200,Blood,No,Same day,Yes
+Fasting Blood Sugar (FBS),Biochemistry,150,Blood,Yes (8-10 hrs),Same day,Yes
+Postprandial Blood Sugar (PPBS),Biochemistry,150,Blood,No (2 hrs post-meal),Same day,Yes
+HbA1c (Glycated Hemoglobin),Biochemistry,650,Blood,No,Next day,Yes
+Lipid Profile,Biochemistry,700,Blood,Yes (10-12 hrs),Same day,Yes
+Liver Function Test (LFT),Biochemistry,800,Blood,Yes (8 hrs),Same day,Yes
+Kidney Function Test (KFT/RFT),Biochemistry,750,Blood,No,Same day,Yes
+"Thyroid Profile (T3, T4, TSH)",Endocrinology,900,Blood,No,Next day,Yes
+Vitamin D (25-OH),Endocrinology,1400,Blood,No,2-3 days,Yes
+Vitamin B12,Endocrinology,1100,Blood,No,2-3 days,Yes
+Urine Routine & Microscopy,Pathology,250,Urine,No,Same day,Yes
+Widal Test,Microbiology,350,Blood,No,Same day,Yes
+Dengue NS1 Antigen,Microbiology,1200,Blood,No,Same day,Yes
+Malaria Antigen Test,Microbiology,500,Blood,No,Same day,Yes
+COVID-19 RT-PCR,Microbiology,800,Nasal/Throat Swab,No,24 hrs,Yes
+Blood Culture & Sensitivity,Microbiology,1000,Blood,No,3-5 days,No
+X-Ray (Single View),Radiology,400,,No,Same day (1-2 hrs),No
+Ultrasound Abdomen (USG),Radiology,1200,,"Yes (6 hrs, for abdomen)",Same day,No
+"CT Scan (Plain, Single Region)",Radiology,3500,,No,Same day,No
+CT Scan (Contrast),Radiology,5500,,Yes (4 hrs),Same day,No
+"MRI (Single Region, Plain)",Radiology,6500,,No,Same day,No
+MRI (Contrast),Radiology,9000,,No,Same day,No
+Mammography,Radiology,1800,,No,Same day,No
+ECG (Electrocardiogram),Cardiology Diagnostics,300,,No,Immediate,No
+2D Echocardiography (Echo),Cardiology Diagnostics,2000,,No,Same day,No
+Treadmill Test (TMT),Cardiology Diagnostics,1500,,"Yes (2 hrs, light meal only)",Same day,No
+Holter Monitoring (24-hr),Cardiology Diagnostics,2500,,No,2 days (after device return),No
+Pulmonary Function Test (PFT),Respiratory Diagnostics,900,,No,Same day,No
+Bone Mineral Density (DEXA) Scan,Radiology,1600,,No,Same day,No

@@ -1,0 +1,48 @@
+doctor_id,doctor_name,department,designation,qualification,experience_years,consultation_days,consultation_timing,fee_inr,room_location,contact_ext
+D004,Dr. Arjun Chowdhury,Cardiology,Senior Consultant Cardiologist,"MBBS, DNB (Cardiology)",15,"Monday, Wednesday, Friday",10:00 AM - 1:00 PM & 5:00 PM - 7:00 PM,1100,"Annex Block, Room 164, 3rd Floor",OPD-2080
+D006,Dr. Divya Chauhan,Cardiology,Senior Consultant Cardiologist,"MBBS, DNB (Cardiology)",12,"Monday, Wednesday, Saturday",11:00 AM - 3:00 PM,1400,"Specialty Wing, Room 282, 1st Floor",OPD-2686
+D002,Dr. Gaurav Mehta,Cardiology,Senior Consultant Cardiologist,"MBBS, MD (Medicine), DM (Cardiology)",10,"Monday, Wednesday, Friday",4:00 PM - 8:00 PM,1050,"Annex Block, Room 315, 1st Floor",OPD-2459
+D003,Dr. Harish Verma,Cardiology,Senior Consultant Cardiologist,"MBBS, MD (Medicine), DM (Cardiology)",26,"Monday, Wednesday, Saturday",5:00 PM - 9:00 PM,1350,"OPD Block B, Room 211, 2nd Floor",OPD-2104
+D001,Dr. Kiran Iyer,Cardiology,Senior Consultant Cardiologist,"MBBS, MD, DM (Cardiology), FACC",12,"Monday, Tuesday, Thursday, Saturday",11:00 AM - 3:00 PM,1050,"OPD Block A, Room 447, Ground Floor",OPD-2604
+D005,Dr. Mohit Bose,Cardiology,Interventional Cardiologist,"MBBS, MD, DM (Cardiology), FACC",15,"Tuesday, Thursday, Saturday",9:00 AM - 1:00 PM,1000,"OPD Block B, Room 249, Ground Floor",OPD-2875
+D047,Dr. Imran Gupta,Dentistry,Orthodontist,"BDS, MDS (Prosthodontics)",24,"Monday, Tuesday, Thursday, Saturday",2:00 PM - 6:00 PM,750,"Main OPD, Room 305, 1st Floor",OPD-2151
+D045,Dr. Karan Pillai,Dentistry,Orthodontist,"BDS, MDS (Oral & Maxillofacial Surgery)",9,"Tuesday, Thursday, Saturday",5:00 PM - 9:00 PM,800,"Annex Block, Room 440, 2nd Floor",OPD-2095
+D044,Dr. Mohit Ghosh,Dentistry,Consultant Dental Surgeon,"BDS, MDS (Prosthodontics)",13,Every day except Sunday,9:00 AM - 12:00 PM & 6:00 PM - 8:00 PM,450,"Main OPD, Room 327, 3rd Floor",OPD-2691
+D046,Dr. Zoya Kapoor,Dentistry,Senior Dental Surgeon,"BDS, MDS (Prosthodontics)",11,Monday to Friday,9:00 AM - 1:00 PM,450,"OPD Block A, Room 226, 3rd Floor",OPD-2625
+D018,Dr. Harish Agarwal,Dermatology,Consultant Dermatologist,"MBBS, MD (Skin & VD)",11,"Tuesday, Thursday, Saturday",9:00 AM - 1:00 PM,500,"OPD Block B, Room 135, Ground Floor",OPD-2880
+D017,Dr. Payal Banerjee,Dermatology,Senior Dermatologist,"MBBS, DVD, DNB (Dermatology)",20,"Tuesday, Thursday, Saturday",4:00 PM - 8:00 PM,850,"OPD Block B, Room 133, 2nd Floor",OPD-2021
+D020,Dr. Preeti Kulkarni,Dermatology,Senior Dermatologist,"MBBS, MD (Dermatology)",7,Every day except Sunday,9:00 AM - 12:00 PM & 6:00 PM - 8:00 PM,550,"Main OPD, Room 311, 3rd Floor",OPD-2884
+D019,Dr. Vivek Gupta,Dermatology,Cosmetic Dermatologist,"MBBS, MD (Dermatology)",12,"Tuesday, Wednesday, Friday, Saturday",4:00 PM - 8:00 PM,1000,"Annex Block, Room 168, 3rd Floor",OPD-2248
+D036,Dr. Devendra Kapoor,ENT,ENT & Head-Neck Surgeon,"MBBS, MS (ENT)",15,Every day except Sunday,11:00 AM - 3:00 PM,850,"OPD Block B, Room 184, 1st Floor",OPD-2902
+D039,Dr. Pooja Chowdhury,ENT,Senior ENT Specialist,"MBBS, DLO, DNB (ENT)",6,"Monday, Wednesday, Saturday",2:00 PM - 6:00 PM,650,"Annex Block, Room 270, Ground Floor",OPD-2118
+D038,Dr. Priya Chauhan,ENT,Senior ENT Specialist,"MBBS, MS (ENT)",10,"Monday, Wednesday, Saturday",5:00 PM - 9:00 PM,800,"OPD Block B, Room 215, Ground Floor",OPD-2675
+D037,Dr. Swati Sharma,ENT,Consultant ENT Surgeon,"MBBS, MS (ENT), Fellowship in Head & Neck Surgery",14,"Monday, Tuesday, Thursday, Saturday",5:00 PM - 9:00 PM,750,"OPD Block B, Room 156, 3rd Floor",OPD-2893
+D032,Dr. Kavita Trivedi,General Medicine,General Physician,"MBBS, MD (General Medicine)",12,"Monday, Tuesday, Thursday, Saturday",9:00 AM - 12:00 PM & 6:00 PM - 8:00 PM,550,"OPD Block B, Room 425, 2nd Floor",OPD-2517
+D030,Dr. Lakshmi Iyer,General Medicine,Senior Consultant Physician,"MBBS, MD (Medicine)",10,"Wednesday, Friday, Sunday",11:00 AM - 3:00 PM,750,"Specialty Wing, Room 136, 1st Floor",OPD-2378
+D035,Dr. Rahul Das,General Medicine,General Physician,"MBBS, MD (General Medicine)",17,"Monday, Wednesday, Friday",5:00 PM - 9:00 PM,450,"Specialty Wing, Room 121, 2nd Floor",OPD-2215
+D034,Dr. Ritu Chatterjee,General Medicine,General Physician,"MBBS, DNB (General Medicine)",21,"Monday, Wednesday, Friday",10:00 AM - 2:00 PM,650,"OPD Block A, Room 177, Ground Floor",OPD-2854
+D031,Dr. Shalini Chatterjee,General Medicine,Consultant Physician,"MBBS, MD (Medicine)",26,"Monday, Wednesday, Friday",5:00 PM - 9:00 PM,550,"OPD Block A, Room 169, 2nd Floor",OPD-2118
+D033,Dr. Suresh Verma,General Medicine,Senior Consultant Physician,"MBBS, MD (General Medicine)",24,"Wednesday, Friday, Sunday",9:00 AM - 1:00 PM,650,"OPD Block A, Room 271, 1st Floor",OPD-2652
+D023,Dr. Mohit Iyer,Gynecology,Senior Consultant Gynecologist,"MBBS, MS (OBG), Fellowship in Laparoscopy",21,"Monday, Wednesday, Friday",10:00 AM - 2:00 PM,1250,"OPD Block B, Room 186, 3rd Floor",OPD-2497
+D022,Dr. Pooja Agarwal,Gynecology,Consultant Obstetrician & Gynecologist,"MBBS, MS (Obstetrics & Gynecology)",17,"Wednesday, Friday, Sunday",10:00 AM - 1:00 PM & 5:00 PM - 7:00 PM,700,"OPD Block B, Room 139, 3rd Floor",OPD-2827
+D024,Dr. Preeti Nair,Gynecology,Consultant Obstetrician & Gynecologist,"MBBS, MS (Obstetrics & Gynecology)",9,"Monday, Wednesday, Friday",2:00 PM - 6:00 PM,900,"Specialty Wing, Room 333, 2nd Floor",OPD-2433
+D021,Dr. Ritika Mehta,Gynecology,Gynec-Oncologist,"MBBS, MS (OBG), Fellowship in Laparoscopy",24,"Monday, Wednesday, Friday",2:00 PM - 6:00 PM,650,"Specialty Wing, Room 156, 1st Floor",OPD-2196
+D025,Dr. Sarika Trivedi,Gynecology,Gynec-Oncologist,"MBBS, MS (OBG), Fellowship in Laparoscopy",26,Monday to Friday,4:00 PM - 8:00 PM,950,"Specialty Wing, Room 212, Ground Floor",OPD-2593
+D028,Dr. Bhavna Mehta,Neurology,Neuro-Physician,"MBBS, MD (Medicine), DM (Neurology)",17,"Monday, Wednesday, Saturday",5:00 PM - 9:00 PM,1600,"OPD Block B, Room 443, 2nd Floor",OPD-2244
+D026,Dr. Farhan Agarwal,Neurology,Senior Consultant Neurologist,"MBBS, MD, DM (Neurology), FRCP",14,"Monday, Wednesday, Friday",10:00 AM - 1:00 PM & 5:00 PM - 7:00 PM,850,"Annex Block, Room 372, 1st Floor",OPD-2058
+D027,Dr. Rekha Gupta,Neurology,Senior Consultant Neurologist,"MBBS, MD (Medicine), DM (Neurology)",23,"Monday, Tuesday, Thursday, Saturday",2:00 PM - 6:00 PM,900,"OPD Block A, Room 392, 1st Floor",OPD-2592
+D029,Dr. Ritu Chowdhury,Neurology,Senior Consultant Neurologist,"MBBS, MD, DM (Neurology), FRCP",24,"Tuesday, Wednesday, Friday, Saturday",9:00 AM - 12:00 PM & 6:00 PM - 8:00 PM,1250,"OPD Block A, Room 105, 3rd Floor",OPD-2636
+D008,Dr. Kiran Menon,Orthopedics,Joint Replacement Surgeon,"MBBS, MS (Orthopedics)",25,"Monday, Wednesday, Friday",4:00 PM - 8:00 PM,1100,"OPD Block A, Room 262, 3rd Floor",OPD-2274
+D007,Dr. Manish Menon,Orthopedics,Joint Replacement Surgeon,"MBBS, MS (Ortho), Fellowship in Joint Replacement",6,"Monday, Tuesday, Thursday, Saturday",11:00 AM - 3:00 PM,850,"Main OPD, Room 295, 2nd Floor",OPD-2947
+D010,Dr. Sanjay Trivedi,Orthopedics,Joint Replacement Surgeon,"MBBS, MS (Ortho), Fellowship in Joint Replacement",12,Every day except Sunday,9:00 AM - 12:00 PM & 6:00 PM - 8:00 PM,1250,"OPD Block B, Room 171, 3rd Floor",OPD-2093
+D009,Dr. Sneha Nair,Orthopedics,Joint Replacement Surgeon,"MBBS, MS (Ortho), Fellowship in Joint Replacement",14,"Tuesday, Wednesday, Friday, Saturday",2:00 PM - 6:00 PM,900,"Main OPD, Room 174, 2nd Floor",OPD-2142
+D011,Dr. Zoya Mehta,Orthopedics,Senior Consultant Orthopedic Surgeon,"MBBS, MS (Orthopedics)",24,Every day except Sunday,10:00 AM - 2:00 PM,850,"Main OPD, Room 296, 3rd Floor",OPD-2541
+D013,Dr. Nikhil Sharma,Pediatrics,Pediatric Specialist,"MBBS, DNB (Pediatrics)",12,Monday to Friday,10:00 AM - 2:00 PM,800,"Specialty Wing, Room 428, 1st Floor",OPD-2156
+D016,Dr. Payal Joshi,Pediatrics,Pediatric Specialist,"MBBS, MD (Pediatrics)",12,Every day except Sunday,4:00 PM - 8:00 PM,800,"Annex Block, Room 203, 2nd Floor",OPD-2408
+D015,Dr. Rahul Dutta,Pediatrics,Consultant Pediatrician,"MBBS, MD (Pediatrics)",5,"Tuesday, Thursday, Saturday",10:00 AM - 2:00 PM,550,"Main OPD, Room 136, 1st Floor",OPD-2131
+D014,Dr. Rahul Saxena,Pediatrics,Senior Consultant Pediatrician,"MBBS, DNB (Pediatrics)",28,"Monday, Wednesday, Friday",9:00 AM - 12:00 PM & 6:00 PM - 8:00 PM,800,"Main OPD, Room 110, Ground Floor",OPD-2951
+D012,Dr. Ritu Agarwal,Pediatrics,Senior Consultant Pediatrician,"MBBS, DNB (Pediatrics)",27,"Wednesday, Friday, Sunday",9:00 AM - 12:00 PM & 6:00 PM - 8:00 PM,450,"OPD Block A, Room 251, 3rd Floor",OPD-2161
+D043,Dr. Aditya Menon,Psychiatry,Senior Consultant Psychiatrist,"MBBS, MD (Psychiatry), Fellowship in Child Psychiatry",8,Every day except Sunday,2:00 PM - 6:00 PM,750,"OPD Block B, Room 416, 2nd Floor",OPD-2415
+D041,Dr. Lakshmi Nair,Psychiatry,Senior Consultant Psychiatrist,"MBBS, MD (Psychiatry)",26,"Monday, Wednesday, Friday",4:00 PM - 8:00 PM,900,"Specialty Wing, Room 321, Ground Floor",OPD-2971
+D042,Dr. Payal Mukherjee,Psychiatry,Senior Consultant Psychiatrist,"MBBS, MD (Psychiatry), Fellowship in Child Psychiatry",14,"Tuesday, Thursday, Saturday",5:00 PM - 9:00 PM,1100,"Annex Block, Room 259, 3rd Floor",OPD-2334
+D040,Dr. Priya Iyer,Psychiatry,Child & Adolescent Psychiatrist,"MBBS, DPM, DNB (Psychiatry)",15,"Monday, Wednesday, Saturday",2:00 PM - 6:00 PM,1150,"Annex Block, Room 362, Ground Floor",OPD-2394

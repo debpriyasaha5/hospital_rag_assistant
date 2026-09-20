@@ -1,0 +1,218 @@
+[
+  {
+    "chunk_id": "handbook_000",
+    "source": "Hospital_Handbook.docx",
+    "heading": "General",
+    "text": "SUNRISE MULTISPECIALTY HOSPITAL\nPatient & Visitor Handbook\n(Synthetic dataset generated for academic / RAG project use)\n123, MG Road, Salt Lake, Kolkata - 700091  |  Helpdesk: +91-33-4000-1234  |  www.sunrisehospital.example"
+  },
+  {
+    "chunk_id": "handbook_001",
+    "source": "Hospital_Handbook.docx",
+    "heading": "About Sunrise Multispecialty Hospital",
+    "text": "Sunrise Multispecialty Hospital is a 250-bed tertiary care facility offering outpatient, inpatient, diagnostic, and emergency services across ten clinical departments, supported by dedicated Radiology, Pathology, Intensive Care, and Operation Theatre units. This handbook explains hospital policies, timings, and frequently asked questions for patients and visitors. Detailed doctor-wise OPD schedules, lab test pricing, health package details, pharmacy stock, and insurance/TPA information are maintained separately in the hospital's master data records."
+  },
+  {
+    "chunk_id": "handbook_002",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Departments & Facilities",
+    "text": "The hospital's clinical and support departments, along with their bed capacity and emergency status, are summarized below."
+  },
+  {
+    "chunk_id": "handbook_003",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Cardiology",
+    "text": "Location: Specialty Wing, 1st Floor\nTotal Beds: 20\nICU Beds: 6\nOperation Theatres: 1\nHead of Department: Dr. Harish Verma\n24x7 Emergency Services: No\nContact Extension: DEPT-3101"
+  },
+  {
+    "chunk_id": "handbook_004",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Orthopedics",
+    "text": "Location: OPD Block A, 2nd Floor\nTotal Beds: 25\nICU Beds: 0\nOperation Theatres: 2\nHead of Department: Dr. Kiran Menon\n24x7 Emergency Services: No\nContact Extension: DEPT-3102"
+  },
+  {
+    "chunk_id": "handbook_005",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Pediatrics",
+    "text": "Location: OPD Block B, Ground Floor\nTotal Beds: 18\nICU Beds: 4\nOperation Theatres: 0\nHead of Department: Dr. Rahul Saxena\n24x7 Emergency Services: Yes\nContact Extension: DEPT-3103"
+  },
+  {
+    "chunk_id": "handbook_006",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Dermatology",
+    "text": "Location: Main OPD, 1st Floor\nTotal Beds: 0\nICU Beds: 0\nOperation Theatres: 0\nHead of Department: Dr. Preeti Kulkarni\n24x7 Emergency Services: No\nContact Extension: DEPT-3104"
+  },
+  {
+    "chunk_id": "handbook_007",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Gynecology",
+    "text": "Location: Specialty Wing, 2nd Floor\nTotal Beds: 22\nICU Beds: 2\nOperation Theatres: 2\nHead of Department: Dr. Pooja Agarwal\n24x7 Emergency Services: Yes\nContact Extension: DEPT-3105"
+  },
+  {
+    "chunk_id": "handbook_008",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Neurology",
+    "text": "Location: Annex Block, 2nd Floor\nTotal Beds: 15\nICU Beds: 5\nOperation Theatres: 1\nHead of Department: Dr. Bhavna Mehta\n24x7 Emergency Services: No\nContact Extension: DEPT-3106"
+  },
+  {
+    "chunk_id": "handbook_009",
+    "source": "Hospital_Handbook.docx",
+    "heading": "General Medicine",
+    "text": "Location: Main OPD, Ground Floor\nTotal Beds: 30\nICU Beds: 4\nOperation Theatres: 0\nHead of Department: Dr. Lakshmi Iyer\n24x7 Emergency Services: Yes\nContact Extension: DEPT-3107"
+  },
+  {
+    "chunk_id": "handbook_010",
+    "source": "Hospital_Handbook.docx",
+    "heading": "ENT",
+    "text": "Location: OPD Block A, 1st Floor\nTotal Beds: 10\nICU Beds: 0\nOperation Theatres: 1\nHead of Department: Dr. Devendra Kapoor\n24x7 Emergency Services: No\nContact Extension: DEPT-3108"
+  },
+  {
+    "chunk_id": "handbook_011",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Psychiatry",
+    "text": "Location: Annex Block, 3rd Floor\nTotal Beds: 12\nICU Beds: 0\nOperation Theatres: 0\nHead of Department: Dr. Alok Trivedi\n24x7 Emergency Services: No\nContact Extension: DEPT-3109"
+  },
+  {
+    "chunk_id": "handbook_012",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Dentistry",
+    "text": "Location: OPD Block B, 1st Floor\nTotal Beds: 0\nICU Beds: 0\nOperation Theatres: 0\nHead of Department: Dr. Farhan Ghosh\n24x7 Emergency Services: No\nContact Extension: DEPT-3110"
+  },
+  {
+    "chunk_id": "handbook_013",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Emergency & Trauma",
+    "text": "Location: Ground Floor, Main Entrance Wing\nTotal Beds: 16\nICU Beds: 8\nOperation Theatres: 1\nHead of Department: Dr. Vivek Chatterjee\n24x7 Emergency Services: Yes\nContact Extension: DEPT-3111"
+  },
+  {
+    "chunk_id": "handbook_014",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Radiology & Imaging",
+    "text": "Location: Diagnostic Block, Ground Floor\nTotal Beds: 0\nICU Beds: 0\nOperation Theatres: 0\nHead of Department: Dr. Sanjay Rao\n24x7 Emergency Services: Yes\nContact Extension: DEPT-3112"
+  },
+  {
+    "chunk_id": "handbook_015",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Pathology & Lab Services",
+    "text": "Location: Diagnostic Block, 1st Floor\nTotal Beds: 0\nICU Beds: 0\nOperation Theatres: 0\nHead of Department: Dr. Swati Nair\n24x7 Emergency Services: Yes\nContact Extension: DEPT-3113"
+  },
+  {
+    "chunk_id": "handbook_016",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Intensive Care Unit (ICU)",
+    "text": "Location: Critical Care Block, 2nd Floor\nTotal Beds: 24\nICU Beds: 24\nOperation Theatres: 0\nHead of Department: Dr. Manish Bhatt\n24x7 Emergency Services: Yes\nContact Extension: DEPT-3114"
+  },
+  {
+    "chunk_id": "handbook_017",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Operation Theatre Complex",
+    "text": "Location: Surgical Block, 3rd Floor\nTotal Beds: 0\nICU Beds: 0\nOperation Theatres: 8\nHead of Department: Dr. Nandini Desai\n24x7 Emergency Services: Yes\nContact Extension: DEPT-3115"
+  },
+  {
+    "chunk_id": "handbook_018",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Ambulance Services",
+    "text": "The hospital operates its own ambulance fleet for emergency transport and inter-facility transfers. All ambulances can be requested through the 24x7 ambulance helpline.\nAMB-01 — Basic Life Support (BLS), currently Available. Contact: AMB-HELPLINE-1.\nAMB-02 — Advanced Life Support (ALS), currently Available. Contact: AMB-HELPLINE-1.\nAMB-03 — ICU-Equipped, currently On Call. Contact: AMB-HELPLINE-1.\nAMB-04 — Basic Life Support (BLS), currently Available. Contact: AMB-HELPLINE-2.\nAMB-05 — Neonatal Transport, currently On Call. Contact: AMB-HELPLINE-2."
+  },
+  {
+    "chunk_id": "handbook_019",
+    "source": "Hospital_Handbook.docx",
+    "heading": "General Ward Visiting Hours",
+    "text": "Visitors may see patients in general wards between 11:00 AM and 1:00 PM, and again between 5:00 PM and 7:00 PM, every day. A maximum of two visitors per patient is permitted at any given time to maintain a comfortable environment for all patients."
+  },
+  {
+    "chunk_id": "handbook_020",
+    "source": "Hospital_Handbook.docx",
+    "heading": "ICU Visiting Hours",
+    "text": "Because of the critical nature of ICU care, visiting is restricted to two short windows: 12:00 PM to 12:30 PM and 6:00 PM to 6:30 PM. Only one visitor per patient is allowed, and visits may be limited further at the treating doctor's discretion based on the patient's condition."
+  },
+  {
+    "chunk_id": "handbook_021",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Admission Process",
+    "text": "For a planned (elective) admission, the treating doctor issues an admission advice slip specifying the reason for admission and the department concerned. The patient or attendant then proceeds to the Admission Desk on the Ground Floor with this slip, a valid photo ID, and insurance or payment details. Bed allocation depends on availability and the medical urgency of the case; where a preferred room category is not immediately available, the patient may be admitted to an alternate category and shifted once a bed opens up. For emergency admissions, patients are received directly at the Emergency & Trauma department, where the duty doctor initiates treatment first and completes admission formalities in parallel."
+  },
+  {
+    "chunk_id": "handbook_022",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Discharge Process",
+    "text": "Discharge begins when the treating doctor determines the patient is medically fit and issues a discharge summary detailing the diagnosis, treatment given, and follow-up instructions. This summary is sent to the billing department, which finalizes the bill — adjusting for any cashless insurance approval already in place, or awaiting full payment otherwise. Once billing is cleared, the discharge is processed at the Admission/Billing Desk. Patients should budget roughly 2 to 4 hours between the doctor's discharge order and final clearance, mainly due to billing and pharmacy reconciliation."
+  },
+  {
+    "chunk_id": "handbook_023",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Documents Required at Admission",
+    "text": "A valid government-issued photo ID (Aadhaar, PAN, passport, voter ID, or driving licence), the admission advice slip from the treating doctor, and — where applicable — insurance card details or TPA identification are required. For cashless treatment, prior intimation to the insurer/TPA is recommended wherever the admission is planned in advance."
+  },
+  {
+    "chunk_id": "handbook_024",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Billing, Insurance & TPA Information",
+    "text": "The hospital works with a number of insurers, third-party administrators (TPAs), and government health schemes to offer cashless treatment wherever the provider is empanelled. Full pricing for individual lab tests, health packages, and pharmacy items is maintained in the hospital's master data records; this section covers the general billing and insurance process."
+  },
+  {
+    "chunk_id": "handbook_025",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Cashless Treatment",
+    "text": "If your insurer or TPA is empanelled with the hospital, cashless treatment can be arranged. At admission, present your insurance card and photo ID at the Insurance Desk, which will submit a pre-authorization request to your insurer or TPA on your behalf. Pre-authorization for planned admissions is typically processed within a few hours; for emergency admissions, treatment begins immediately while pre-authorization is completed in parallel.\nStar Health Insurance (Insurer) — Cashless: Yes; Empanelled (Direct); typical processing: 2-4 hours (pre-authorization). Contact: INS-4001.\nICICI Lombard General Insurance (Insurer) — Cashless: Yes; Empanelled (Direct); typical processing: 2-4 hours (pre-authorization). Contact: INS-4002.\nHDFC ERGO Health Insurance (Insurer) — Cashless: Yes; Empanelled (Direct); typical processing: 3-5 hours (pre-authorization). Contact: INS-4003.\nNiva Bupa Health Insurance (Insurer) — Cashless: Yes; Empanelled (Direct); typical processing: 2-4 hours (pre-authorization). Contact: INS-4004.\nCare Health Insurance (Insurer) — Cashless: Yes; Empanelled (Direct); typical processing: 3-5 hours (pre-authorization). Contact: INS-4005."
+  },
+  {
+    "chunk_id": "handbook_026",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Cashless Treatment",
+    "text": "MediAssist TPA (TPA) — Cashless: Yes; Empanelled (via TPA); typical processing: 4-6 hours (pre-authorization). Contact: TPA-4101.\nParamount Health Services TPA (TPA) — Cashless: Yes; Empanelled (via TPA); typical processing: 4-6 hours (pre-authorization). Contact: TPA-4102.\nVidal Health TPA (TPA) — Cashless: Yes; Empanelled (via TPA); typical processing: 4-6 hours (pre-authorization). Contact: TPA-4103.\nFamily Health Plan (FHPL) TPA (TPA) — Cashless: Yes; Empanelled (via TPA); typical processing: 4-6 hours (pre-authorization). Contact: TPA-4104.\nAyushman Bharat (PM-JAY) (Government Scheme) — Cashless: Yes (for eligible beneficiaries); Empanelled; typical processing: Verified at admission desk. Contact: GOV-4201.\nCentral Government Health Scheme (CGHS) (Government Scheme) — Cashless: Yes (for eligible beneficiaries); Empanelled; typical processing: Verified at admission desk. Contact: GOV-4202.\nBajaj Allianz General Insurance (Insurer) — Cashless: No (Reimbursement only); Not Empanelled; typical processing: N/A - patient pays and claims reimbursement. Contact: INS-4006."
+  },
+  {
+    "chunk_id": "handbook_027",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Reimbursement Claims",
+    "text": "If your insurance provider is not empanelled with the hospital, you may still receive treatment by paying the bill directly and later filing a reimbursement claim with your insurer. The billing department provides all documentation required for such claims, including the itemized final bill, discharge summary, and relevant investigation reports."
+  },
+  {
+    "chunk_id": "handbook_028",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Pharmacy & Diagnostic Services",
+    "text": "The hospital's in-house pharmacy is located on the Ground Floor near the Main OPD and operates 24x7, serving both outpatients and inpatients. Commonly prescribed medicines are generally kept in stock, and prescription-only medicines (marked accordingly in the pharmacy records) require a valid prescription from a registered doctor at the time of purchase.\nDiagnostic services — including hematology, biochemistry, microbiology, radiology (X-ray, ultrasound, CT, MRI), and cardiology diagnostics (ECG, Echo, TMT, Holter) — are available through the Pathology & Lab Services and Radiology & Imaging departments. Home sample collection is available for most blood and urine-based tests; imaging and cardiology diagnostic tests require an in-person visit. Turnaround times vary by test, ranging from same-day for routine blood work to a few days for specialized cultures."
+  },
+  {
+    "chunk_id": "handbook_029",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Health Checkup Packages",
+    "text": "The hospital offers a range of preventive health checkup packages designed for different age groups and risk profiles, bundling multiple individual tests at a combined price. Full details (tests included, pricing, and fasting requirements) are listed in the master data records; a brief overview of the available packages follows.\nBasic Wellness Checkup — for Adults, general screening, priced at ₹1500. Fasting required: Yes (10-12 hrs).\nExecutive Health Checkup — for Working professionals, 30-50 yrs, priced at ₹5500. Fasting required: Yes (10-12 hrs).\nSenior Citizen Checkup — for Age 60+, priced at ₹7500. Fasting required: Yes (10-12 hrs).\nCardiac Risk Screening — for Adults with cardiac risk factors, priced at ₹4500. Fasting required: Yes (10-12 hrs).\nDiabetes Screening Package — for Adults with diabetes risk, priced at ₹1800. Fasting required: Yes (8-10 hrs).\nWomen's Wellness Package — for Women, 25+, priced at ₹4200. No fasting required.\nPre-Employment Health Checkup — for Job applicants, priced at ₹1200. Fasting required: Yes (8 hrs).\nPre-Surgical (Pre-Op) Checkup — for Patients scheduled for surgery, priced at ₹3200. Fasting required: Yes (8 hrs)."
+  },
+  {
+    "chunk_id": "handbook_030",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Health Checkup Packages",
+    "text": "Fever & Infection Panel — for Acute fever presentation, priced at ₹2200. No fasting required.\nFull Body Comprehensive Checkup — for Adults wanting complete screening, priced at ₹8900. Fasting required: Yes (10-12 hrs)."
+  },
+  {
+    "chunk_id": "handbook_031",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Frequently Asked Questions",
+    "text": "Q: What are the hospital's general OPD registration hours?\nA: OPD registration is open Monday to Saturday from 8:00 AM to 8:00 PM, and Sunday from 9:00 AM to 1:00 PM. Emergency registration is available 24x7 at the Emergency & Trauma desk.\nQ: Is parking available at the hospital?\nA: Yes, multi-level parking is available at the Main Entrance Wing with capacity for 150 cars and 200 two-wheelers. The first 30 minutes are free; thereafter, standard hourly parking charges apply.\nQ: Does the hospital have a cafeteria?\nA: Yes, the hospital cafeteria is located on the Ground Floor near OPD Block B and is open from 7:00 AM to 10:00 PM daily. A separate attendants' canteen is available in the Annex Block, open 24x7.\nQ: Is Wi-Fi available for patients and visitors?\nA: Yes, complimentary Wi-Fi is available in all waiting areas, OPD blocks, and general wards. Connect to the 'Sunrise-Guest' network and register with your registered mobile number to get access.\nQ: Are wheelchairs available for patients?\nA: Yes, wheelchairs are available free of charge at all entrances and can be requested at the help desk or from ward staff. For advance planning, patients can call the helpdesk before arrival."
+  },
+  {
+    "chunk_id": "handbook_032",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Frequently Asked Questions",
+    "text": "Q: Is there an ATM inside the hospital premises?\nA: Yes, an ATM is located near the Main OPD reception on the Ground Floor.\nQ: How do I file a complaint or give feedback?\nA: Complaints and feedback can be submitted at the Patient Relations Desk (Ground Floor, Main OPD), via the feedback box near the reception, or by calling the Patient Grievance Helpline. Feedback forms are also available at every nursing station.\nQ: What documents are required for OPD registration?\nA: A valid government photo ID (Aadhaar, PAN, passport, voter ID, or driving licence) is required for first-time OPD registration. Returning patients can use their hospital ID card or registered mobile number.\nQ: What is the process for hospital admission?\nA: For planned admission, the treating doctor issues an admission advice slip, which is taken to the Admission Desk along with ID proof and insurance/payment details. A bed is allocated based on availability and the patient's medical requirement. For emergency admission, the Emergency & Trauma department directly coordinates bed allocation.\nQ: What is the process for discharge?"
+  },
+  {
+    "chunk_id": "handbook_033",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Frequently Asked Questions",
+    "text": "A: The treating doctor issues a discharge summary once the patient is medically fit. The billing department then finalizes the bill (adjusted for insurance/cashless approval if applicable), and after payment clearance, the discharge is processed, typically taking 2-4 hours from the doctor's discharge order.\nQ: What are the general ward visiting hours?\nA: General ward visiting hours are 11:00 AM to 1:00 PM and 5:00 PM to 7:00 PM daily. A maximum of 2 visitors per patient is permitted at a time.\nQ: What are the ICU visiting hours?\nA: ICU visiting is restricted to 12:00 PM to 12:30 PM and 6:00 PM to 6:30 PM, with only 1 visitor per patient allowed at a time, subject to the treating doctor's discretion.\nQ: Can I get cashless treatment with my health insurance?\nA: Cashless treatment is available if your insurer or TPA is empanelled with the hospital (see the Insurance & TPA list). You will need to submit your insurance card and ID proof at admission; the insurance desk will handle pre-authorization with your insurer.\nQ: What if my insurance provider is not empanelled with the hospital?"
+  },
+  {
+    "chunk_id": "handbook_034",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Frequently Asked Questions",
+    "text": "A: You can still avail treatment by paying upfront and later claiming reimbursement directly from your insurance provider. The billing department can provide all necessary documents (itemized bill, discharge summary, reports) for your reimbursement claim.\nQ: Does the hospital have an in-house pharmacy?\nA: Yes, the in-house pharmacy is located on the Ground Floor near Main OPD and is open 24x7 for both outpatients and inpatients.\nQ: Are lab reports available online?\nA: Yes, most lab reports can be accessed online via the patient portal using your registered mobile number and a one-time password (OTP), usually within the stated report turnaround time for each test.\nQ: Is home collection available for lab tests?\nA: Yes, home sample collection is available for most blood and urine tests (see individual test listings). Radiology and cardiology diagnostic tests (X-ray, CT, MRI, ECG, Echo, etc.) require an in-person hospital visit.\nQ: How do I book an appointment with a doctor?"
+  },
+  {
+    "chunk_id": "handbook_035",
+    "source": "Hospital_Handbook.docx",
+    "heading": "Frequently Asked Questions",
+    "text": "A: Appointments can be booked via the hospital helpdesk, the patient portal/app, or by walking in to the OPD registration counter, subject to the doctor's listed availability (days and timings) in the Doctor Directory.\nQ: What should I bring for a pre-scheduled surgery?\nA: Patients should bring their admission advice slip, ID proof, insurance documents (if applicable), a list of current medications, and any prior test reports or scans related to the condition. Pre-surgical (pre-op) checkup tests should be completed in advance as advised.\nQ: Does the hospital provide ambulance services?\nA: Yes, the hospital operates its own ambulance fleet, including Basic Life Support (BLS), Advanced Life Support (ALS), ICU-equipped, and neonatal transport ambulances. These can be requested through the 24x7 ambulance helpline."
+  }
+]

@@ -1,0 +1,13 @@
+Provider Name,Type,Cashless Available,Network Status,Claim Processing Time,Contact
+Star Health Insurance,Insurer,Yes,Empanelled (Direct),2-4 hours (pre-authorization),INS-4001
+ICICI Lombard General Insurance,Insurer,Yes,Empanelled (Direct),2-4 hours (pre-authorization),INS-4002
+HDFC ERGO Health Insurance,Insurer,Yes,Empanelled (Direct),3-5 hours (pre-authorization),INS-4003
+Niva Bupa Health Insurance,Insurer,Yes,Empanelled (Direct),2-4 hours (pre-authorization),INS-4004
+Care Health Insurance,Insurer,Yes,Empanelled (Direct),3-5 hours (pre-authorization),INS-4005
+MediAssist TPA,TPA,Yes,Empanelled (via TPA),4-6 hours (pre-authorization),TPA-4101
+Paramount Health Services TPA,TPA,Yes,Empanelled (via TPA),4-6 hours (pre-authorization),TPA-4102
+Vidal Health TPA,TPA,Yes,Empanelled (via TPA),4-6 hours (pre-authorization),TPA-4103
+Family Health Plan (FHPL) TPA,TPA,Yes,Empanelled (via TPA),4-6 hours (pre-authorization),TPA-4104
+Ayushman Bharat (PM-JAY),Government Scheme,Yes (for eligible beneficiaries),Empanelled,Verified at admission desk,GOV-4201
+Central Government Health Scheme (CGHS),Government Scheme,Yes (for eligible beneficiaries),Empanelled,Verified at admission desk,GOV-4202
+Bajaj Allianz General Insurance,Insurer,No (Reimbursement only),Not Empanelled,N/A - patient pays and claims reimbursement,INS-4006

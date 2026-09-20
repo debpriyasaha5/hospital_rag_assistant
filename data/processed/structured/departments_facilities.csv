@@ -1,0 +1,16 @@
+department,floor_block,total_beds,icu_beds,operation_theatres,head_of_department,emergency_24x7,contact_ext
+Cardiology,"Specialty Wing, 1st Floor",20,6,1,Dr. Harish Verma,No,DEPT-3101
+Orthopedics,"OPD Block A, 2nd Floor",25,0,2,Dr. Kiran Menon,No,DEPT-3102
+Pediatrics,"OPD Block B, Ground Floor",18,4,0,Dr. Rahul Saxena,Yes,DEPT-3103
+Dermatology,"Main OPD, 1st Floor",0,0,0,Dr. Preeti Kulkarni,No,DEPT-3104
+Gynecology,"Specialty Wing, 2nd Floor",22,2,2,Dr. Pooja Agarwal,Yes,DEPT-3105
+Neurology,"Annex Block, 2nd Floor",15,5,1,Dr. Bhavna Mehta,No,DEPT-3106
+General Medicine,"Main OPD, Ground Floor",30,4,0,Dr. Lakshmi Iyer,Yes,DEPT-3107
+ENT,"OPD Block A, 1st Floor",10,0,1,Dr. Devendra Kapoor,No,DEPT-3108
+Psychiatry,"Annex Block, 3rd Floor",12,0,0,Dr. Alok Trivedi,No,DEPT-3109
+Dentistry,"OPD Block B, 1st Floor",0,0,0,Dr. Farhan Ghosh,No,DEPT-3110
+Emergency & Trauma,"Ground Floor, Main Entrance Wing",16,8,1,Dr. Vivek Chatterjee,Yes,DEPT-3111
+Radiology & Imaging,"Diagnostic Block, Ground Floor",0,0,0,Dr. Sanjay Rao,Yes,DEPT-3112
+Pathology & Lab Services,"Diagnostic Block, 1st Floor",0,0,0,Dr. Swati Nair,Yes,DEPT-3113
+Intensive Care Unit (ICU),"Critical Care Block, 2nd Floor",24,24,0,Dr. Manish Bhatt,Yes,DEPT-3114
+Operation Theatre Complex,"Surgical Block, 3rd Floor",0,0,8,Dr. Nandini Desai,Yes,DEPT-3115

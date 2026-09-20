@@ -1,0 +1,6 @@
+Vehicle ID,Type,Status,Contact
+AMB-01,Basic Life Support (BLS),Available,AMB-HELPLINE-1
+AMB-02,Advanced Life Support (ALS),Available,AMB-HELPLINE-1
+AMB-03,ICU-Equipped,On Call,AMB-HELPLINE-1
+AMB-04,Basic Life Support (BLS),Available,AMB-HELPLINE-2
+AMB-05,Neonatal Transport,On Call,AMB-HELPLINE-2

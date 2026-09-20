@@ -1,0 +1,11 @@
+package_name,Target Group,tests_included,Price (INR),Fasting Required,Report Time
+Basic Wellness Checkup,"Adults, general screening","CBC, FBS, Urine Routine, Lipid Profile, ECG",1500,Yes (10-12 hrs),Same day
+Executive Health Checkup,"Working professionals, 30-50 yrs","CBC, LFT, KFT, Lipid Profile, HbA1c, Thyroid Profile, ECG, Chest X-Ray, USG Abdomen",5500,Yes (10-12 hrs),"Same day, consult next day"
+Senior Citizen Checkup,Age 60+,"CBC, LFT, KFT, Lipid Profile, HbA1c, Thyroid Profile, Vitamin D, Vitamin B12, ECG, 2D Echo, DEXA Scan",7500,Yes (10-12 hrs),"Same day, consult next day"
+Cardiac Risk Screening,Adults with cardiac risk factors,"Lipid Profile, ECG, 2D Echo, TMT, HbA1c",4500,Yes (10-12 hrs),Same day
+Diabetes Screening Package,Adults with diabetes risk,"FBS, PPBS, HbA1c, Lipid Profile, KFT, Urine Routine",1800,Yes (8-10 hrs),Same day
+Women's Wellness Package,"Women, 25+","CBC, Thyroid Profile, Vitamin D, Vitamin B12, Mammography, USG Pelvis, Pap Smear",4200,No,"Same day, consult next day"
+Pre-Employment Health Checkup,Job applicants,"CBC, FBS, Urine Routine, Chest X-Ray, Vision & Hearing Screening",1200,Yes (8 hrs),Same day
+Pre-Surgical (Pre-Op) Checkup,Patients scheduled for surgery,"CBC, KFT, LFT, Blood Grouping, Coagulation Profile, ECG, Chest X-Ray, COVID-19 RT-PCR",3200,Yes (8 hrs),Same day
+Fever & Infection Panel,Acute fever presentation,"CBC, Widal Test, Dengue NS1, Malaria Antigen, Urine Routine",2200,No,Same day
+Full Body Comprehensive Checkup,Adults wanting complete screening,"CBC, LFT, KFT, Lipid Profile, HbA1c, Thyroid Profile, Vitamin D, Vitamin B12, Urine Routine, ECG, 2D Echo, USG Abdomen, Chest X-Ray",8900,Yes (10-12 hrs),"Same day, consult next day"

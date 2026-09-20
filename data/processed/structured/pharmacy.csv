@@ -1,0 +1,31 @@
+medicine_name,category,Type,price_inr,Prescription Required,Stock Status
+Paracetamol 500mg,Analgesic/Antipyretic,Generic,20,No,In Stock
+Ibuprofen 400mg,NSAID/Pain Relief,Generic,35,No,In Stock
+Azithromycin 500mg,Antibiotic,Branded,110,Yes,In Stock
+Amoxicillin + Clavulanate 625mg,Antibiotic,Branded,180,Yes,In Stock
+Metformin 500mg,Antidiabetic,Generic,45,Yes,In Stock
+Insulin Glargine (Lantus) Injection,Antidiabetic,Branded,950,Yes,Limited Stock
+Amlodipine 5mg,Antihypertensive,Generic,40,Yes,In Stock
+Atorvastatin 20mg,Lipid-Lowering,Generic,90,Yes,In Stock
+Pantoprazole 40mg,Antacid/PPI,Generic,60,No,In Stock
+Cetirizine 10mg,Antihistamine,Generic,25,No,In Stock
+Salbutamol Inhaler,Bronchodilator,Branded,210,Yes,In Stock
+Levothyroxine 50mcg,Thyroid Hormone,Generic,55,Yes,In Stock
+Ondansetron 4mg,Antiemetic,Generic,30,Yes,In Stock
+Diclofenac Gel,Topical Analgesic,Branded,95,No,In Stock
+Multivitamin Tablets,Supplement,Branded,150,No,In Stock
+Calcium + Vitamin D3 Tablets,Supplement,Generic,130,No,In Stock
+Iron + Folic Acid Tablets,Supplement,Generic,70,No,In Stock
+Amoxicillin Syrup (Pediatric),Antibiotic,Branded,85,Yes,In Stock
+ORS Sachets,Rehydration,Generic,15,No,In Stock
+Ceftriaxone Injection 1g,Antibiotic (Injectable),Generic,140,Yes,In Stock
+Enoxaparin Injection,Anticoagulant,Branded,620,Yes,Limited Stock
+Clopidogrel 75mg,Antiplatelet,Generic,75,Yes,In Stock
+Losartan 50mg,Antihypertensive,Generic,50,Yes,In Stock
+Montelukast 10mg,Anti-allergic/Asthma,Generic,85,Yes,In Stock
+Sertraline 50mg,Antidepressant,Generic,110,Yes,In Stock
+Alprazolam 0.25mg,Anxiolytic,Generic,40,Yes (Schedule H1),In Stock
+N95 Face Mask,PPE/Consumable,Branded,25,No,In Stock
+Surgical Gloves (Pair),PPE/Consumable,Generic,10,No,In Stock
+Glucometer Strips (Pack of 25),Diagnostic Consumable,Branded,450,No,In Stock
+Nebulizer Kit,Medical Device,Branded,1800,No,Out of Stock
