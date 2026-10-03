@@ -10,13 +10,45 @@ from langchain_core.prompts import ChatPromptTemplate
 from retrieval.keyword_retriever import keyword_search
 from retrieval.vector_retriever import vector_search
 from retrieval.hybrid_retriever import hybrid_search
+from generation.generator import generate_answer
 
 load_dotenv()
+
+class IntentDecision(BaseModel):
+    intent: Literal['general', 'hospital'] = Field(
+        description="Whether the user is asking a general conversation question or a hospital-related question."
+    )
 
 class RouteDecision(BaseModel):
     route: Literal["keyword", "vector", "hybrid"] = Field(
         description="The retrieval method best suited to answer the question."
     )
+
+intent_prompt = ChatPromptTemplate.from_messages(
+    [
+        (
+            "system",
+            """
+            Decide whether the user is asking a general conversation question
+            or a hospital-related question.
+
+            If it is a greeting, thank-you, or casual conversation, return:
+            general
+
+            If it is about hospital services, fees, departments, doctors,
+            emergency, treatment, or hospital information, return:
+            hospital
+
+            Return only one word: general or hospital.
+            """,
+        ),
+        ("human", "{question}"),
+    ]
+)
+
+intent_model= init_chat_model(
+    model="gpt-4o-mini", 
+    temperature=0).with_structured_output(IntentDecision)
 
 router_prompt = ChatPromptTemplate.from_messages(
     [
@@ -46,64 +78,39 @@ router_model = init_chat_model(
     temperature=0,
 ).with_structured_output(RouteDecision)
 
-def answer_results(question, documents):
-    if not documents:
-        return "I couldn't find that information in the hospital data."
-
-    context = "\n\n".join(
-        f"Source: {document.metadata.get('source', 'unknown')}\n"
-        f"{document.page_content}"
-        for document in documents
-    )
-    answer_prompt = ChatPromptTemplate.from_template(
-        """
-        Answer the question using only the provided hospital data.
-        If the data does not contain the answer, say "I don't know".
-        Keep the answer concise.
-
-        Hospital data:
-        {context}
-
-        Question:
-        {question}
-        """
-    )
-    answer_model = init_chat_model(
-        model="gpt-4o",
-        temperature=0,
-        max_tokens=512
-    )
-
-    answer_chain = (
-        answer_prompt 
-        | answer_model 
-        | StrOutputParser()
-    )
-    
-    return answer_chain.invoke(
-        {
-            "context": context,
-            "question": question
-        }
-    )
 
 def route_question(question):
-    decision = (router_prompt | router_model).invoke(
+    if not question or not question.strip():
+        return {
+            "route": "general",
+            "answer": "Please ask a hospital-related question."
+        }
+
+    intention = (intent_prompt | intent_model).invoke(
         {"question": question}
     )
 
-    if decision.route == "keyword":
+    if intention.intent == "general":
+        return {
+            "route": "general",
+            "answer": "Hi! I’m your hospital assistant. Ask me about hospital services, fees, departments, or emergency information."
+        }
+
+    route_decision = (router_prompt | router_model).invoke(
+        {"question": question}
+    )
+
+    if route_decision.route == "keyword":
         documents = keyword_search(question)
-        answer = answer_results(question, documents)
-
-    elif decision.route == "vector":
-        answer = vector_search(question)
-
+    elif route_decision.route == "vector":
+        documents = vector_search(question)
     else:
-        answer = hybrid_search(question)
+        documents = hybrid_search(question)
+
+    answer = generate_answer(question, documents)
 
     return {
-        "route": decision.route,
+        "route": route_decision.route,
         "answer": answer,
     }
 

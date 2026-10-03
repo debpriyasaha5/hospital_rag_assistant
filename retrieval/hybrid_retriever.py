@@ -36,28 +36,4 @@ def hybrid_search(question):
         weights=[0.5, 0.5],
     )
 
-    llm = init_chat_model(model="gpt-4o", temperature=0.0, max_tokens=512)
-
-    prompt = ChatPromptTemplate.from_template(
-        """
-        Answer the question using only the context below.
-        If the context does not contain the answer, say "I don't know".
-        Keep the answer concise.
-
-        Context:
-        {context}
-
-        Question: {question}
-        """
-    )
-
-    answer_chain = (
-        {
-            "context": combined_retriever | RunnableLambda(format_documents),
-            "question": RunnablePassthrough(),
-        }
-        | prompt
-        | llm
-        | StrOutputParser()
-    )
-    return answer_chain.invoke(question)
+    return combined_retriever.invoke(question)

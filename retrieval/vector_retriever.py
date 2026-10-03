@@ -38,26 +38,4 @@ def get_vector_retriever():
 
 def vector_search(question):
     retriever = get_vector_retriever()
-    prompt = ChatPromptTemplate.from_template(
-        """
-        Answer the question based on the context below.
-
-        Context:
-        {context}
-
-        Question: {question}
-        Answer: Make sure to answer in a concise manner and 
-        if you don't know the answer, just say "I don't know"."""
-        
-    )
-
-    rag_pipeline = (
-        {
-            "context": retriever | RunnableLambda(format_documents),
-            "question": RunnablePassthrough(),    
-        }
-        | prompt
-        | llm
-        | StrOutputParser()
-    )
-    return rag_pipeline.invoke(question)
+    return retriever.invoke(question)
