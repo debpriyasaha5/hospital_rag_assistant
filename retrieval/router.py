@@ -4,7 +4,6 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from langchain.chat_models import init_chat_model
-from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
 from retrieval.keyword_retriever import keyword_search
@@ -12,7 +11,54 @@ from retrieval.vector_retriever import vector_search
 from retrieval.hybrid_retriever import hybrid_search
 from generation.generator import generate_answer
 
+import re
+from ingestion.build_index import load_structured_data
+
 load_dotenv()
+
+def lookup_department_extension(question):
+    question_text = f" {re.sub(r'[^a-z0-9]+', ' ', question.lower()).strip()} "
+
+    if not re.search(r"\b(extension|ext)\b", question_text):
+        return None
+
+    for document in load_structured_data():
+        if document.metadata.get("table") != "departments_facilities":
+            continue
+
+        fields = {}
+        content = document.page_content.partition(": ")[2]
+
+        for part in content.split(";"):
+            key, separator, value = part.partition(":")
+            if separator:
+                fields[key.strip().lower()] = value.strip()
+
+        department = fields.get("department")
+        extension = fields.get("contact ext")
+
+        if not department or not extension:
+            continue
+
+        normalized_department = re.sub(
+            r"[^a-z0-9]+", " ", department.lower()
+        ).strip()
+
+        if f" {normalized_department} " in question_text:
+            context = (
+                f"Department: {department}; "
+                f"Contact extension: {extension}"
+            )
+            return {
+                "route": "structured",
+                "answer": (
+                    f"The contact extension for {department} "
+                    f"is {extension}."
+                ),
+                "contexts": [context],
+            }
+
+    return None
 
 class IntentDecision(BaseModel):
     intent: Literal['general', 'hospital'] = Field(
@@ -86,6 +132,10 @@ def route_question(question):
             "answer": "Please ask a hospital-related question."
         }
 
+    direct_result = lookup_department_extension(question)
+    if direct_result:
+        return direct_result
+    
     intention = (intent_prompt | intent_model).invoke(
         {"question": question}
     )
@@ -112,6 +162,7 @@ def route_question(question):
     return {
         "route": route_decision.route,
         "answer": answer,
+        "contexts": [document.page_content for document in documents]
     }
 
 if __name__ == "__main__":
