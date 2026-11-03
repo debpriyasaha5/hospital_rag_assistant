@@ -20,7 +20,13 @@ def format_text(documents):
         parts.append(f"Source: {source}\n{content}")
     return "\n\n".join(parts)
 
-def generate_answer(question, documents):
+def format_chat_history(chat_history):
+    return "\n".join(
+        f"Question: {question}\nAnswer: {answer}"
+        for question, answer in (chat_history or [])
+    )
+
+def generate_answer(question, documents, chat_history):
     context = format_text(documents)
 
     if not context:
@@ -36,6 +42,9 @@ def generate_answer(question, documents):
 
         Keep the answer short, clear, and helpful.
 
+        Recent conversation:
+        {chat_history}
+        
         Context:
         {context}
 
@@ -46,6 +55,7 @@ def generate_answer(question, documents):
     chain = prompt | llm | StrOutputParser()
 
     return chain.invoke({
+        "chat_history": format_chat_history(chat_history),
         "context": context,
         "question": question
     })
