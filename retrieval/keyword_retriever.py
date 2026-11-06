@@ -1,13 +1,17 @@
 from functools import lru_cache
 import re
+from time import perf_counter
 from nltk.corpus import stopwords
 
 from langchain_community.retrievers import BM25Retriever
+from utils.logging_config import configure_logging
 
 from ingestion.build_index import (
     load_structured_data,
     load_unstructured_data
 )
+
+logger = configure_logging(__name__)
 
 ALIASES = {
     "lft": ("liver function test",),
@@ -48,15 +52,39 @@ def _tokenize(text):
 
 @lru_cache(maxsize=1)
 def get_keyword_retriever():
-    documents = load_unstructured_data() + load_structured_data()
+    started_at = perf_counter()
+    logger.info("Building BM25 retriever")
+    try:
+        documents = load_unstructured_data() + load_structured_data()
+    except Exception:
+        logger.exception("Failed to load documents for BM25 retriever")
+        raise
+
     if not documents:
+        logger.error("No documents available to build BM25 retriever")
         raise ValueError("No documents are available for keyword search.")
 
-    return BM25Retriever.from_documents(
-        documents,
-        k=8,
-        preprocess_func=_tokenize,
+    retriever = BM25Retriever.from_documents(
+        documents, k=8, preprocess_func=_tokenize
     )
+    logger.info(
+        "Built BM25 retriever with %d documents in %.2f seconds",
+        len(documents),
+        perf_counter() - started_at,
+    )
+    return retriever
 
 def keyword_search(question):
-    return get_keyword_retriever().invoke(question)
+    started_at = perf_counter()
+    try:
+        documents = get_keyword_retriever().invoke(question)
+    except Exception:
+        logger.exception("Keyword retrieval failed")
+        raise
+
+    logger.info(
+        "Keyword retrieval returned %d documents in %.3f seconds",
+        len(documents),
+        perf_counter() - started_at,
+    )
+    return documents

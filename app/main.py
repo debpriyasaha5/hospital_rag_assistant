@@ -4,8 +4,10 @@ from pydantic import BaseModel, Field
 
 from retrieval.router import route_question
 from retrieval.router import clear_chat_history
+from utils.logging_config import configure_logging
 
 app = FastAPI(title="Hospital AI Assistant")
+logger = configure_logging(__name__)
 
 INDEX_HTML = """
 <!DOCTYPE html>
@@ -288,12 +290,19 @@ def health_check():
 
 @app.post("/ask", response_model=AskResponse)
 def ask_hospital_question(payload: QuestionRequest) -> AskResponse:
-    result = route_question(payload.question, session_id=payload.session_id)
+    logger.info("Received question request")
+    try:
+        result = route_question(payload.question, session_id=payload.session_id)
+    except Exception:
+        logger.exception("Question request failed")
+        raise
+    logger.info("Question request completed via %s route", result.get("route", "unknown"))
     return AskResponse(**result)
 
 @app.delete("/session/{session_id}")
 def clear_hospital_session(session_id: str):
     clear_chat_history(session_id)
+    logger.info("Cleared conversation history")
 
     return {
         "status": "cleared"

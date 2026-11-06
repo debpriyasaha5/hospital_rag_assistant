@@ -1,14 +1,17 @@
 from pathlib import Path
 import csv
 import json
+from time import perf_counter
 
 from dotenv import load_dotenv
 from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
+from utils.logging_config import configure_logging
 
 
 load_dotenv()  # Load environment variables from .env file
+logger = configure_logging(__name__)
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -18,14 +21,33 @@ VECTOR_STORE_DIR = ROOT / "data" / "processed" / "vector_store"
 
 
 def create_knowledge_base():
-    all_documents = load_unstructured_data() + load_structured_data()
+    started_at = perf_counter()
+    logger.info("Starting vector index build")
+    try:
+        unstructured_documents = load_unstructured_data()
+        structured_documents = load_structured_data()
+        all_documents = unstructured_documents + structured_documents
 
-    embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
+        logger.info(
+            "Loaded %d handbook chunks and %d structured records",
+            len(unstructured_documents),
+            len(structured_documents),
+        )
+        embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
-    vector_store = Chroma.from_documents(
-        documents=all_documents,
-        embedding=embeddings,
-        persist_directory=str(VECTOR_STORE_DIR)
+        vector_store = Chroma.from_documents(
+            documents=all_documents,
+            embedding=embeddings,
+            persist_directory=str(VECTOR_STORE_DIR)
+        )
+    except Exception:
+        logger.exception("Vector index build failed")
+        raise
+
+    logger.info(
+        "Vector index build completed with %d documents in %.2f seconds",
+        len(all_documents),
+        perf_counter() - started_at,
     )
     return vector_store
 
