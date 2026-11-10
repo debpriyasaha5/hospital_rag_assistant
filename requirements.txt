@@ -17,3 +17,4 @@ datasets==5.0.1
 retrieved_contexts
 uvicorn[standard]>=0.33.0
 nltk==3.10.3
+streamlit==1.67.0

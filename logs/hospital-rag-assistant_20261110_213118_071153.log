@@ -1,0 +1,4 @@
+2026-11-10 21:31:23,399 [INFO] httpx2: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-11-10 21:31:23,409 [INFO] httpx2: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-11-10 21:31:23,415 [INFO] httpx2: HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-11-10 21:31:23,422 [INFO] httpx2: HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
