@@ -47,26 +47,36 @@ st.markdown(
 			background-size: 28px 28px;
 		}
 		[data-testid="stHeader"] { background: rgba(242, 246, 242, .88); }
-		.block-container { max-width: 1120px; padding-top: 2rem; padding-bottom: 7rem; }
+		.block-container { max-width: 1120px; padding-top: 4rem; padding-bottom: 7rem; }
 		[data-testid="stSidebar"] {
 			background: var(--hospital-paper);
 			border-right: 1px solid var(--hospital-line);
 		}
-		.brand-row { display: flex; align-items: center; gap: 12px; margin: 0 0 2.4rem; }
+		.brand-row {
+			display: flex; align-items: center; gap: 12px;
+			flex: 1 1 220px; min-width: 0; margin: 0 0 2.4rem;
+		}
 		.brand-mark {
 			display: grid; place-items: center; width: 38px; height: 38px;
 			border-radius: 8px; color: white; background: var(--hospital-green);
-			font: 700 23px/1 "Trebuchet MS", sans-serif;
+			flex: 0 0 38px; font: 700 23px/1 "Trebuchet MS", sans-serif;
 		}
-		.brand-name { color: var(--hospital-ink); font-size: 15px; font-weight: 700; }
-		.brand-caption { margin-top: 2px; color: var(--hospital-muted); font-size: 12px; }
+		.brand-name {
+			color: var(--hospital-ink); font-size: 15px; font-weight: 700;
+			overflow-wrap: anywhere;
+		}
+		.brand-caption {
+			margin-top: 2px; color: var(--hospital-muted); font-size: 12px;
+			overflow-wrap: anywhere;
+		}
 		.service-label {
 			display: inline-block; padding: 8px 11px; border-radius: 4px;
 			color: var(--hospital-green-dark); background: var(--hospital-soft-green);
 			font-size: 12px; font-weight: 700;
 		}
 		.topbar {
-			display: flex; align-items: center; justify-content: space-between;
+			display: flex; flex-wrap: wrap; align-items: center;
+			justify-content: space-between; gap: 12px;
 			margin: 0 0 2.5rem; padding: 0 0 1rem;
 			border-bottom: 1px solid var(--hospital-line);
 		}
@@ -96,7 +106,9 @@ st.markdown(
 		}
 		.footer-note { color: var(--hospital-muted); font-size: 12px; }
 		@media (max-width: 700px) {
-			.block-container { padding: 1.2rem 1rem 6rem; }
+			.block-container { padding: 4rem 1rem 6rem; }
+			.topbar { align-items: flex-start; margin-bottom: 2rem; }
+			.service-label { margin-left: 50px; }
 		}
 	</style>
 	""",
