@@ -1,6 +1,9 @@
 from functools import lru_cache
+from pathlib import Path
 import re
 from time import perf_counter
+
+import nltk
 from nltk.corpus import stopwords
 
 from langchain_community.retrievers import BM25Retriever
@@ -12,6 +15,8 @@ from ingestion.build_index import (
 )
 
 logger = configure_logging(__name__)
+
+NLTK_DATA_DIRECTORY = Path.home() / "nltk_data"
 
 ALIASES = {
     "lft": ("liver function test",),
@@ -36,7 +41,8 @@ ALIASES = {
 def _tokenize(text):
     tokens = re.findall(r"[a-z0-9]+", text.lower())
     token_text = " ".join(tokens)
-    expanded_tokens = [token for token in tokens if token not in stopwords.words('english')]
+    english_stopwords = _get_english_stopwords()
+    expanded_tokens = [token for token in tokens if token not in english_stopwords]
 
     for alias, alternatives in ALIASES.items():
         alias_tokens = alias.split()
@@ -44,10 +50,43 @@ def _tokenize(text):
             for alternative in alternatives:
                 expanded_tokens.extend(
                     token for token in alternative.split()
-                    if token not in set(stopwords.words('english'))
+                    if token not in english_stopwords
                 )
 
     return expanded_tokens
+
+
+@lru_cache(maxsize=1)
+def _get_english_stopwords():
+    nltk_data_path = str(NLTK_DATA_DIRECTORY)
+    if nltk_data_path not in nltk.data.path:
+        nltk.data.path.insert(0, nltk_data_path)
+
+    try:
+        return set(stopwords.words("english"))
+    except LookupError:
+        logger.info("NLTK stopwords corpus is missing; downloading it")
+        NLTK_DATA_DIRECTORY.mkdir(parents=True, exist_ok=True)
+        downloaded = nltk.download(
+            "stopwords",
+            download_dir=nltk_data_path,
+            quiet=True,
+        )
+        if not downloaded:
+            logger.error("NLTK stopwords corpus download failed")
+            raise RuntimeError(
+                "NLTK stopwords are missing and could not be downloaded. "
+                "Check network access or provision the NLTK stopwords corpus."
+            )
+
+        try:
+            return set(stopwords.words("english"))
+        except LookupError as error:
+            logger.exception("NLTK stopwords corpus is still unavailable after download")
+            raise RuntimeError(
+                "NLTK reported a successful stopwords download, but the corpus "
+                "could not be loaded."
+            ) from error
 
 
 @lru_cache(maxsize=1)

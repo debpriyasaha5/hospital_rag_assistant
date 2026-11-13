@@ -9,6 +9,7 @@ LOG_DIRECTORY = PROJECT_ROOT / "logs"
 LOG_PREFIX = "hospital-rag-assistant"
 MAX_LOG_BYTES = 5_000_000
 _HANDLER_MARKER = "hospital_rag_file_handler"
+_CONSOLE_HANDLER_MARKER = "hospital_rag_console_handler"
 
 
 class TimestampedRotatingFileHandler(RotatingFileHandler):
@@ -52,6 +53,9 @@ class TimestampedRotatingFileHandler(RotatingFileHandler):
 def configure_logging(logger_name=None):
     root_logger = logging.getLogger()
     root_logger.setLevel(logging.INFO)
+    formatter = logging.Formatter(
+        "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+    )
 
     if not any(getattr(handler, _HANDLER_MARKER, False) for handler in root_logger.handlers):
         file_handler = TimestampedRotatingFileHandler(
@@ -59,12 +63,17 @@ def configure_logging(logger_name=None):
             LOG_PREFIX,
             max_bytes=MAX_LOG_BYTES,
         )
-        file_handler.setFormatter(
-            logging.Formatter(
-                "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
-            )
-        )
+        file_handler.setFormatter(formatter)
         setattr(file_handler, _HANDLER_MARKER, True)
         root_logger.addHandler(file_handler)
+
+    if not any(
+        getattr(handler, _CONSOLE_HANDLER_MARKER, False)
+        for handler in root_logger.handlers
+    ):
+        console_handler = logging.StreamHandler()
+        console_handler.setFormatter(formatter)
+        setattr(console_handler, _CONSOLE_HANDLER_MARKER, True)
+        root_logger.addHandler(console_handler)
 
     return logging.getLogger(logger_name)
